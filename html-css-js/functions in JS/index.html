@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sample Example</title>
+	<link rel="stylesheet" type="text/css" href="./lib/css/styles.css">
+	
+	<!-- <script type="text/javascript">
+		function  hiMOM(){
+			document.getElementById('demo').innerHTML = 'MOM';
+		}
+	</script> -->
+
+	<style type="text/css">
+		p#demo{
+			text-align: center;
+		}
+		#hide{
+			color: blue;
+			background: pink;
+		}
+	</style>
+</head>
+<body>
+
+<!-- <img src="flfdlfd"> -->
+
+<!-- <button  style="color: green;background: lightblue;" type="button" onclick="hiMOM()"> Show</button>
+
+<button id="hide" type="button"
+onclick='document.getElementById("demo").innerHTML = "" '>
+Hide</button>
+
+<button class="datetime" type="button"
+onclick='document.getElementById("demo").innerHTML = Date() '>
+DATE & TIME</button>
+
+<p id="demo"></p>
+<script type="text/javascript">
+		document.getElementById("demo").innerHTML = "HI!";
+</script> -->
+
+<p id="f1"></p>
+<p id="f2"></p>
+<p id="f3"></p>
+<p id="f4"></p>
+<!-- <script src="./lib/js/scripts.js"></script> -->
+<script type="text/javascript">
+	// Called functions:-
+
+function  hiMOM(){
+	document.getElementById('demo').innerHTML = 'MOM';
+}
+
+// A) function has no arguments and no return  value or type.
+function myFunction1() {
+	console.log("A) function has no arguments and no return  value or type.");
+	document.getElementById("f1").innerHTML = 111; 	
+}
+
+// B) A function has no arguments and with return value or type
+function myFunction2() {
+	console.log("B) A function has no arguments and with return value or type");
+	return 112;
+}
+
+// C) A function has arguments and no return type or value.
+function myFunction3(p1,p2) { // here p1 and p2 are temp. arguments or fromal arguments
+ 	console.log("C) A function has arguments and no return type or value.");
+	document.getElementById("f3").innerHTML = p1 + p2; 	
+}
+
+// D) A function has arguments and return type or value.
+function myFunction4(p1, p2) { // here p1 and p2 are temp. arguments or fromal arguments
+	console.log("D) A function has arguments and return type or value.");
+	myFunction1();
+  	return p1 + p2;
+}
+
+// Calling function:-
+
+// A) A function has no arguments and no return  value or type.
+myFunction1();
+// B) A function has no arguments and with return value or type
+document.getElementById("f2").innerHTML = myFunction2();
+// C) A function has arguments and no return type or value.
+myFunction3(112,1);
+// D) A function has arguments and return type or value.
+document.getElementById("f4").innerHTML = myFunction4(113,1);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript While Loop</h2>
+
+<p id="demo"></p>
+
+<script>
+let text = "";
+let i = 1;
+do {
+	if(i ==3){
+    	i++;
+        //continue;
+        break;
+    }
+  text += "The number is " + i+"<br>";
+  i=i+1;
+}while (i <=5);
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>

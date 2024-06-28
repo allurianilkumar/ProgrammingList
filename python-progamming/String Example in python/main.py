@@ -1,0 +1,7 @@
+print('MOM')
+print('\"MOM\"')
+print('\'MOM\'')
+print('\\MOM\\')
+print("MOM"+"IT")
+print("MOM"+" "+"IT")
+print("MOM"+" "+"IT"+" "+'Solutions')

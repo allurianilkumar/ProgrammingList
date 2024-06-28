@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p>The best way to loop through an array is using a standard for loop:</p>
+
+<p id="demo"></p>
+
+<script>
+const fruits = [1,2,3,4,5];
+let fLen = fruits.length;
+let sum=fruits[0];
+let mul=fruits[0];
+let max=fruits[0];
+let min=fruits[0];
+
+let text = "<ul>";
+for (let i =1 ; i < fLen; i++) {
+  text += "<li>" + fruits[i] + "</li>";
+  sum+=fruits[i];
+  mul*=fruits[i];
+  if( max < fruits[i]){
+  	max=fruits[i];
+  }
+  if( min > fruits[i]){
+  	min = fruits[i];
+  }
+}
+text += "</ul>";
+text += "<br>"+"Sum="+sum;
+text += "<br>"+"Mul="+mul;
+text += "<br>"+"Max="+max;
+text += "<br>"+"Min="+min;
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>

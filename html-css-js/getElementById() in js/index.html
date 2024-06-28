@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sample Example</title>
+	<link rel="stylesheet" type="text/css" href="./lib/css/styles.css">
+	<script src="./lib/js/scripts.js"></script>
+	<!-- <script type="text/javascript">
+		function  hiMOM(){
+			document.getElementById('demo').innerHTML = 'MOM';
+		}
+	</script> -->
+
+	<style type="text/css">
+		p#demo{
+			text-align: center;
+		}
+		#hide{
+			color: blue;
+			background: pink;
+		}
+	</style>
+</head>
+<body>
+
+<!-- <img src="flfdlfd"> -->
+
+<button  style="color: green;background: lightblue;" type="button" onclick="hiMOM()"> Show</button>
+
+<button id="hide" type="button"
+onclick='document.getElementById("demo").innerHTML = "" '>
+Hide</button>
+
+<button class="datetime" type="button"
+onclick='document.getElementById("demo").innerHTML = Date() '>
+DATE & TIME</button>
+
+<p id="demo"></p>
+<script type="text/javascript">
+		document.getElementById("demo").innerHTML = "HI!";
+</script>
+</body>
+</html>
+
+
+
+
+
+HINT:
+
+styles.css:-
+
+p#demo{
+	color: red;
+	background: yellow;
+}
+button.datetime {
+    color: white;
+    background: brown;
+}
+
+
+scripts.js:-
+
+function  hiMOM(){
+	document.getElementById('demo').innerHTML = 'MOM';
+}
