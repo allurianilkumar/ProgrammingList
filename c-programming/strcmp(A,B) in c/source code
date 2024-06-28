@@ -1,0 +1,21 @@
+
+#include <stdio.h>
+#include<string.h>
+void main()
+{
+    /*
+    int strcmp(s1,s2) => s1-s2 => -ve s1 is small
+    65-66 = -1
+    s1=s1-s2
+    */
+    //  s1=s1-s2 => -ve s1 is small
+    printf("\nstrcmp(A,B) => %d",strcmp("AB","ABC")); // AB is Small
+    // s1=s1-s2 => 0 value => s1 and s2 both are same
+    printf("\nstrcmp(A,A) => %d",strcmp("A","A")); // Both are same
+    // s1=s1-s2 => +ve value => s1 is big
+    printf("\nstrcmp(B,A) => %d",strcmp("B","A")); // B is big
+    printf("\nstrcmp(A,B) => %d",strcmp("A","B")); // A is small
+    
+}
+
+

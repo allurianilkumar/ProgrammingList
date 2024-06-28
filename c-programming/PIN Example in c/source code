@@ -1,0 +1,7 @@
+#include<stdio.h>
+void main(){
+    int PIN;
+    printf("Enter PIN:");// printing somthing
+    scanf("%d",&PIN); // Reading data from the keyboard.
+    printf("PIN=%d",PIN); // shows the PIN value
+}

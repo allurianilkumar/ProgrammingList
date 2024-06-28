@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript HTML Events</h2>
+<p>Click the button to display the date.</p>
+
+
+<input onchange="enterUserName()" type="text" value="MOM">
+<button onmouseover="displayDate()">The time is?</button>
+
+<button onmouseout="hide()">hide</button>
+<script>
+function displayDate() {
+  document.getElementById("demo").innerHTML = Date();
+}
+function hide() {
+  document.getElementById("demo").innerHTML = "";
+}
+
+function enterUserName(){
+	document.getElementById("username").innerHTML = "Changing User Name";
+}
+</script>
+
+<p id="demo"></p>
+<p id="username"></p>
+
+</body>
+</html> 
